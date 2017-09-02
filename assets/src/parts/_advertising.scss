@@ -9,10 +9,10 @@
 		align-items: flex-start;
 		position: relative;
 		padding-bottom: rem(115);
+		z-index: 1;
 	}
 	&__info-wrap{
 		@include col(6);
-		z-index: 1;
 	}
 	&__title{
 		@include text($white, rem(45), 500, $text-ff);
@@ -33,5 +33,6 @@
 		position: absolute;
 		bottom:0;
 		right: rem(100);
+		z-index: -1;
 	}
 }

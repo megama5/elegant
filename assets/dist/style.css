@@ -312,12 +312,12 @@ a {
   .advertising__container {
     align-items: flex-start;
     position: relative;
-    padding-bottom: 7.1875rem; }
+    padding-bottom: 7.1875rem;
+    z-index: 1; }
   .advertising__info-wrap {
     max-width: 50%;
     width: 100%;
-    padding: 0 0.9375rem;
-    z-index: 1; }
+    padding: 0 0.9375rem; }
   .advertising__title {
     color: #ffffff;
     font-family: "Lato", sans-serif;
@@ -347,7 +347,8 @@ a {
   .advertising__img {
     position: absolute;
     bottom: 0;
-    right: 6.25rem; }
+    right: 6.25rem;
+    z-index: -1; }
 
 .work {
   padding-top: 2.75rem;
