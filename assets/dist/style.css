@@ -13,7 +13,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,400i");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 @import url(../../plugin/font-awesome/css/font-awesome.min.css);
 html, body, div, span, applet, object, iframe,
@@ -70,7 +70,7 @@ a {
   width: 100%;
   margin: 0 auto; }
 
-.flex, .row, .flex-row-container, .form, .nav__container, .nav__list, .services__list, .work__list, .work__btn-wrap, .callback__social {
+.flex, .row, .flex-row-container, .form, .nav__container, .nav__list, .services__list, .form__info-wrap-100--btn, .work__list, .work__btn-wrap, .callback__social {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -173,11 +173,16 @@ a {
   font-size: 0; }
 .form__input {
   background: none;
-  padding: 1.125rem 1.75rem; }
-.form__info-wrap-50 {
-  width: 50%; }
-.form__info-wrap-100 {
+  padding: 1.125rem 1.75rem;
   width: 100%; }
+.form__info-wrap-50 {
+  width: 50%;
+  padding: 0 0.9375rem 5.625rem 0.9375rem; }
+.form__info-wrap-100 {
+  width: 100%;
+  padding: 0 0.9375rem 6.25rem 0.9375rem; }
+  .form__info-wrap-100--btn {
+    justify-content: center; }
 
 .nav__container {
   justify-content: space-between;
@@ -370,7 +375,7 @@ a {
   padding-top: 2.75rem;
   padding-bottom: 7.625rem;
   background: url("../img/callback-bg.jpg") center no-repeat;
-  background-position: cover; }
+  background-size: cover; }
   .callback__container {
     align-items: center; }
   .callback__title {
@@ -384,7 +389,8 @@ a {
     max-width: 33.3333333333%;
     width: 100%;
     padding: 0 0.9375rem;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 4.0625rem; }
   .callback__social-link {
     margin-right: 1.875rem; }
     .callback__social-link:last-child {
