@@ -1,0 +1,51 @@
+.work{
+	padding-top: rem(44);
+	padding-bottom: rem(80);
+	&__container{
+		@extend .flex-col-container;
+		justify-content: center;
+	}
+	&__title{
+		@include title($black);
+		margin-bottom: rem(90);
+	}
+	&__list{
+		@extend .flex;
+		justify-content: space-around;
+		margin-bottom: rem(80);
+	}
+	&__list-item{
+		@include col(4);
+		position: relative;
+		min-height: rem(420);
+		width: rem(350);
+		z-index: 1;
+
+		&--01{
+			background: url(../img/work-01.jpg) center no-repeat;
+		}
+		&--02{
+			background: url(../img/work-02.jpg) center no-repeat;
+		}
+		&--03{
+			background: url(../img/work-03.jpg) center no-repeat;
+		}
+	}
+	&__btn-wrap{
+		@extend .flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__btn{
+		@include col(4);
+		@include text($black, rem(24), 400, $text-ff);
+		border: 3px solid $black;	
+		text-transform: uppercase;
+		text-align: center;
+		max-width: rem(350);
+		@include hover($white-01);
+		&:hover{
+			border-color: darken($white-01, 15%);
+		}
+	}
+}

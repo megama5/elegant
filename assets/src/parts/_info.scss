@@ -1,0 +1,17 @@
+.info{
+	@extend .flex-col;
+	justify-content: space-between;
+	align-items: center;
+	&__img{
+		margin-bottom: rem(50);
+	}
+	&__title{
+		@include text($black, rem(24), 400, $text-ff);
+		margin-bottom: rem(40);
+		text-align: center;
+	}
+	&__text{
+		@include text($black, rem(16), 400, $text-ff);
+		text-align: center;
+	}
+}

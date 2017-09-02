@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+
+.container{
+	max-width: rem(1130);
+	width: 100%;
+	margin: 0 auto;
+}
+
+.flex{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-col{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.row{
+	width: 100%;
+	@extend .flex;
+}
+
+.flex-row-container{
+	@extend .container;
+	@extend .flex;
+}
+
+.flex-col-container{
+	@extend .container;
+	@extend .flex-col;
+}

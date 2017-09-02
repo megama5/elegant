@@ -1,0 +1,41 @@
+$scroll-size: rem(92);
+.hero{
+	height: 100vh;
+	background: url('../img/hero-img.jpg') center no-repeat;
+	background-size: cover;
+	position: relative;
+	&__container{
+		@extend .flex-col-container;
+		align-items: center;
+		justify-content: center;
+		height: 55%;
+	}
+	&__info-wrap{
+		@include col(7);
+		padding: 0 rem(30);
+		
+	}
+	&__title{
+		@include title($white, rem(52));
+		margin-bottom: rem(45);
+	}
+	&__title-text{
+		@include text($white-01, rem(22), 400);
+		text-align: center;
+	}
+	&__scroll-wrap{
+		position: absolute;
+		bottom: rem(46);
+		left: calc( 50% - #{$scroll-size/2});
+	}
+	&__scrol-img{
+		width: $scroll-size;
+		height: $scroll-size;
+		color: $white;
+		opacity: .5;
+		transition: all .3s ease;
+		&:hover{
+			opacity: 1;			
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.advertising{
+	padding-top: rem(173);
+	
+	background: url('../img/advertising-bg.png') center no-repeat $black;
+	background-size: cover;
+	
+	&__container{
+		@extend .flex-col-container;
+		align-items: flex-start;
+		position: relative;
+		padding-bottom: rem(115);
+	}
+	&__info-wrap{
+		@include col(6);
+		z-index: 1;
+	}
+	&__title{
+		@include text($white, rem(45), 500, $text-ff);
+		text-transform: uppercase;
+		margin-bottom: rem(12);
+	}
+	&__text{
+		@include text($white, rem(22), 100, $text-ff);
+		margin-bottom: rem(70);
+	}
+	&__link{
+		@include text($white, rem(18), 400, $text-ff);
+		@include hover($white-01);
+		font-family: Lato;
+		text-decoration: underline;
+	}
+	&__img{
+		position: absolute;
+		bottom:0;
+		right: rem(100);
+	}
+}

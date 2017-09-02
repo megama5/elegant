@@ -1,0 +1,41 @@
+//retrun css setting for col in grid
+@mixin col($col, $colBase: 12){
+	max-width: percentage( $col * 1 / $colBase  );
+	width: 100%;
+	padding: 0 $gup;
+}
+
+// for section text
+/*
+	$c - color
+	$fs - font size [px for rem()]
+	$fw - wont weight
+	$lg - line height, calculated based on font size [+6];
+	$pb - padding bottom [px for rem()]
+*/
+@mixin text($c, $fs, $fw, $ff: $text-ff){
+	color: $c;
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	line-height: lh($fs);
+}
+
+// for changing color in title block
+@mixin title($color: $white, $ptb: rem(74)){
+	@extend .title;
+	color: $color;
+	padding-top: $ptb;
+	padding-bottom: $ptb;
+	&:after{
+		background-color: $color;
+	}
+}
+
+// add hover effect vs transition 
+@mixin hover($color, $p: 15%){
+	transition: all .3s ease;
+	&:hover{
+		color: darken($color, $p);
+	}
+}

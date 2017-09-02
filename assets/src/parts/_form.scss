@@ -1,0 +1,25 @@
+.form{
+	@extend .flex-row-container;
+	&__info-wrap{
+		position: relative;
+
+	}
+	&__label{
+		position: absolute;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		font-size: 0;
+	}
+	&__input{
+		background: none;
+		padding: rem(18) rem(28);
+
+	}
+	&__info-wrap-50{
+		width: 50%;
+	}
+	&__info-wrap-100{
+		width: 100%
+	}
+}

@@ -1,0 +1,23 @@
+// title block v-size via paddings tob and bottom
+$title__padding-tb: rem(74);
+.title{
+	color: #ffffff;
+	@include text($white, rem(48), 700, $header-ff);
+	text-transform: uppercase;
+	padding-top: $title__padding-tb;
+	padding-bottom: $title__padding-tb;
+	position: relative;
+	text-align: center;
+	&:after{
+		width: rem(84);
+		height: rem(2);
+		position: absolute;
+		content: '';
+		display: block;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		background-color: $white;
+	}
+}

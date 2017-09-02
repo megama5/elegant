@@ -1,0 +1,33 @@
+// padding for nav container
+$p-top: rem(50);
+.nav{
+	&__container{
+		@extend .flex-row-container;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: $p-top;
+		padding-bottom: $p-top;
+	}
+	&__logo-link{
+		@include col(2);
+		text-align: left;
+	}
+	&__bar{
+		@include col(7);
+	}
+	&__list{
+		@extend .flex-row-container;
+		justify-content: center;
+	}
+	&__list-item{
+		margin-right: rem(50);
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		@include text($white-01, rem(14), 500);
+		@include hover($white-01);
+		text-transform: uppercase;
+	}
+}

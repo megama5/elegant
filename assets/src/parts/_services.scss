@@ -1,0 +1,21 @@
+.services{
+	padding-top: rem(42);
+	padding-bottom: rem(120);
+	&__container{
+		@extend .flex-col-container;
+		align-items: center;
+	}
+	&__title{
+		@include col(4);
+		@include title($black);	
+		margin-bottom: rem(70);	
+	}
+	
+	&__list{
+		@extend .flex-row-container;
+
+	}
+	&__list-item{
+		@include col(4);
+	}
+}
