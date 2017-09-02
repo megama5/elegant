@@ -14,6 +14,16 @@
 		background: none;
 		padding: rem(18) rem(28);
 		width: 100%; 
+		border: none;
+		border-bottom: rem(2) solid #afafaf;
+		color: $white;
+		&:focus{
+			outline: none;
+		}
+		&::placeholder{
+			@include text($white-02, rem(18), 400, $text-ff);
+			font-style: italic;
+		}
 	}
 	&__info-wrap-50{
 		width: 50%;
@@ -26,5 +36,18 @@
 			@extend .flex;
 			justify-content: center;
 		}
+	}
+	&__submit{
+		@include text($white, rem(24), 400);
+		min-width: rem(183);
+    height: rem(62);
+    border: rem(2) solid white;
+    background: none;
+    text-transform: uppercase;
+    padding: 0 $gup;
+    @include hover($white-01);
+    &:hover{
+    	border-color: darken($white-01, 15%);
+    }
 	}
 }
